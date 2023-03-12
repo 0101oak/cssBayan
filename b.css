@@ -74,9 +74,30 @@ body {
 
 .accordion_input:checked~.content>.btn {
     transform: rotate(45deg);
-    visibility: visible;
+    
 }
 
 .accordion_input:active~.content>.btn {
     transform: rotate(45deg);
+}
+
+@media (hover: hover) {
+    .accordion_wrapper:hover .accordion_label {
+        cursor: pointer;
+    }
+
+    .accordion_wrapper:hover .btn {
+        visibility: visible;
+    }
+
+    .accordion_label:hover>.pic {
+        transform: scale(1);
+        width: 22rem;
+        height: 22rem;
+        visibility: visible;
+    }
+
+    .accordion_label:hover .text {
+        color: black;
+    }
 }
