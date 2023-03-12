@@ -1,36 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+    font-size: 1rem;
 }
 
-body {
-    
+.main_text {
+    width: 22vw;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 0.1rem solid black;
+    padding-left: 1.5rem;
+    background-color: ivory;
+    margin: 0 auto;
+    margin-bottom: 4rem;
 }
 
 .accordion {
-    width: 55%;
+    width: 50vw;
     margin: 0 auto;
-    padding: 4rem 1rem;
-    border: 1px solid red;
 }
 
-/* hide radio button */
+.accordion_label {
+    display: block;
+    border-top: 0.13rem solid black;
+    margin-bottom: 0.5rem;
+}
 
-.open_b {
+.accordion_input {
     visibility: hidden;
 }
 
-.text_btn_wrapper {
-    border: 1px solid red;
+.content {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .pic {
     visibility: hidden;
-}
-
-.open_b:checked~.pic {
-    visibility: visible;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
 }
   
+.accordion_input:checked~.pic{
+    visibility: visible;
+    width: 12rem;
+    height: 12rem;
+}
