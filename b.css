@@ -32,7 +32,7 @@ body {
 
 .content {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .text {
@@ -40,6 +40,13 @@ body {
     font-size: 1rem;
     font-weight: 600;
     color: cornflowerblue;
+}
+
+.btn {
+   font-size: 2rem;
+   font-weight: 600;
+   visibility: hidden;
+   transition: 1s;
 }
 
 .pic {
@@ -63,4 +70,13 @@ body {
 
 .accordion_input:active~.content>.text {
     color: cornflowerblue;
+}
+
+.accordion_input:checked~.content>.btn {
+    transform: rotate(45deg);
+    visibility: visible;
+}
+
+.accordion_input:active~.content>.btn {
+    transform: rotate(45deg);
 }
