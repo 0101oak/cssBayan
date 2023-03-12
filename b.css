@@ -7,6 +7,30 @@ body {
     
 }
 
+.accordion {
+    width: 55%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    border: 1px solid red;
+}
 
-  
+/* hide radio button */
+
+.open_b {
+    visibility: hidden;
+}
+
+.text_btn_wrapper {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic {
+    visibility: hidden;
+}
+
+.open_b:checked~.pic {
+    visibility: visible;
+}
   
